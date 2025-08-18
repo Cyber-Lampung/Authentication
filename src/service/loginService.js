@@ -1,5 +1,3 @@
-import React from "react";
-
 export async function LoginAuth(email, password) {
   const res = await fetch("/api/v1/login", {
     method: "POST",
