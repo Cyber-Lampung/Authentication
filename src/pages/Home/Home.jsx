@@ -1,5 +1,8 @@
 import NavBar from "../../components/Navbar";
-import SectionBar from "../ComponentLanfingPages/SectionBar";
+import SectionBar from "../../components/SectionBar";
+import ProfileSingkat from "../../components/ProfileSingkat";
+import LayananKami from "../../components/LayananKami";
+import Testimony from "../../components/Testimony";
 
 export default function Home() {
   return (
@@ -7,6 +10,9 @@ export default function Home() {
       <main>
         <NavBar />
         <SectionBar />
+        <ProfileSingkat />
+        <LayananKami />
+        <Testimony />
       </main>
     </>
   );
