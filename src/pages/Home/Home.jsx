@@ -3,6 +3,8 @@ import SectionBar from "../../components/SectionBar";
 import ProfileSingkat from "../../components/ProfileSingkat";
 import LayananKami from "../../components/LayananKami";
 import Testimony from "../../components/Testimony";
+import Contact from "../../components/Contact";
+import Footer from "../../components/Footer";
 
 export default function Home() {
   return (
@@ -13,6 +15,8 @@ export default function Home() {
         <ProfileSingkat />
         <LayananKami />
         <Testimony />
+        <Contact />
+        <Footer />
       </main>
     </>
   );

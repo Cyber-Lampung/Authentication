@@ -9,16 +9,17 @@ export default function NavBar() {
           <h1 className="text-4xl font-bold ">WebDev Indo Store</h1>
         </div>
 
-        <ul className="flex gap-5 font-semibold">
+        <ul className="flex gap-5 font-semibold text-sm">
           <Link to={"/Home"}>Home</Link>
-          <Link to={"/About"}>Tentang Kami</Link>
-          <Link to={"/Produk"}>Layanan Kami</Link>
-          <Link to={"/Contact"}>Testimony Produk</Link>
+          <Link to={"/TentangKami"}>Tentang Kami</Link>
+          <Link to={"/Layanan"}>Layanan Kami</Link>
+          <Link to={"/Testimony"}>Testimony Produk</Link>
+          <Link to={"/Contact"}>Contact</Link>
         </ul>
 
         <div className="Auth flex gap-5">
           <Link
-            to={"/Reister"}
+            to={"/Register"}
             className="p-1.5 w-25 text-center border-1 text-sm border-black rounded-lg font-semibold"
           >
             Register

@@ -19,16 +19,19 @@ export default function Login() {
 
   return (
     <>
-      <main className="flex h-screen bg-blue-400 justify-center items-center">
+      <main
+        className="flex h-screen justify-center items-center"
+        style={{ background: "#040438ff" }}
+      >
         <form onSubmit={HandelForm} className="w-90">
-          <div className="boxForm bg-white p-4 rounded-lg">
+          <div className="boxForm bg-white p-4 rounded-lg shadow-lg">
             <div className="TitleForm">
               <h1 className="text-3xl font-bold">Log In</h1>
             </div>
-            <div className="mt-10 flex flex-col gap-5">
+            <div className="mt-8 flex flex-col gap-5">
               <Input
                 type="email"
-                className="border-2 border-black p-2 rounded-lg w-[90%] outline-none"
+                className="border-2 border-black p-2 rounded-lg w-[96%] outline-none text-sm font-semibold"
                 placeholder="Email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
@@ -36,7 +39,7 @@ export default function Login() {
 
               <Input
                 type="password"
-                className="border-2 border-black p-2 rounded-lg w-[85%] outline-none"
+                className="border-2 border-black p-2 rounded-lg w-[85%] outline-none text-sm font-semibold"
                 placeholder="Password"
                 value={password}
                 onChange={(e) => setPass(e.target.value)}
@@ -44,13 +47,16 @@ export default function Login() {
 
               <Button
                 type="submit"
-                className="p-2 w-[80%] m-auto mt-5 border-2 bordre-black rounded-lg font-bold text-md"
+                className="p-1 w-[60%] m-auto mt-5 border-2 bordre-black rounded-lg font-bold text-md cursor-pointer"
                 name="Login"
               />
 
-              <div className="Lppass mt-2 flex gap-3">
-                <p className="font-bold">Lupa Password ? </p>
-                <Link to={"/Reset"} className="font-semibold text-blue-500">
+              <div className="Lppass mt-2 flex gap-3 items-center">
+                <p className="font-bold text-xs">Lupa Password ? </p>
+                <Link
+                  to={"/Reset"}
+                  className="font-semibold text-blue-500 text-xs"
+                >
                   Reset
                 </Link>
               </div>

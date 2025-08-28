@@ -4,7 +4,7 @@ import Input from "../../../components/Input";
 import Button from "../../../components/Button";
 import { RegisterPost } from "../../../service/authService";
 
-export default function Register({ className }) {
+export default function Register() {
   const [email, setEmail] = useState("");
   const [username, setName] = useState("");
   const [password, setPassword] = useState("");
@@ -31,10 +31,13 @@ export default function Register({ className }) {
 
   return (
     <>
-      <main className="flex items-center justify-center h-screen w-full bg-violet-400">
+      <main
+        className="flex items-center justify-center h-screen w-full"
+        style={{ background: "#040438ff" }}
+      >
         <form
           onSubmit={register}
-          className="bg-white w-[90%] items-center   rounded-lg p-5 shadow-lg"
+          className="bg-white w-[25%] items-center   rounded-lg p-5 shadow-lg"
         >
           <div className="BoxRegister">
             <div className="title">
@@ -42,21 +45,21 @@ export default function Register({ className }) {
             </div>
             <div className="mt-10 flex flex-col gap-5">
               <Input
-                className="border-2 border-black p-2 w-75 rounded-lg outline-none text-sm font-semibold"
+                className="border-2 border-black p-2 w-75 rounded-lg outline-none text-xs font-semibold"
                 value={email}
                 type="email"
                 placeholder="Email"
                 onChange={(e) => setEmail(e.target.value)}
               />
               <Input
-                className="border-2 border-black p-2 w-70 rounded-lg outline-none text-sm font-semibold"
+                className="border-2 border-black p-2 w-70 rounded-lg outline-none text-xs font-semibold"
                 value={username}
                 type="text"
                 placeholder="Username"
                 onChange={(e) => setName(e.target.value)}
               />
               <Input
-                className="border-2 border-black p-2 w-65 rounded-lg outline-none text-sm font-semibold"
+                className="border-2 border-black p-2 w-65 rounded-lg outline-none text-xs font-semibold"
                 value={password}
                 type="password"
                 placeholder="Password"
@@ -66,12 +69,14 @@ export default function Register({ className }) {
             <div className="mt-9 w-[100%] flex justify-center m-auto">
               <Button
                 name="Register "
-                className="p-2 rounded-lg border-2 border-black w-[90%] font-bold text-md"
+                className="p-1 rounded-lg border-2 border-black w-[90%] font-bold text-md cursor-pointer"
               />
             </div>
-            <span className="flex gap-2 mt-5">
-              <p className="font-bold text-black text-sm">Sudah Punya AKun ?</p>
-              <Link to="/Login" className="font-bold text-blue-400">
+            <span className="flex gap-2 mt-8">
+              <p className="font-semibold text-black text-xs">
+                Sudah Punya AKun ?
+              </p>
+              <Link to="/Login" className="font-bold text-blue-400 text-xs">
                 Login
               </Link>
             </span>
