@@ -6,7 +6,7 @@ export async function LoginAuth(email, password) {
       authorization: "dia",
       "Access-Control-Allow-Origin": "*",
     },
-    body: JSON.stringify(email, password),
+    body: JSON.stringify({ email: email, password: password }),
   });
   console.log(res);
 }
