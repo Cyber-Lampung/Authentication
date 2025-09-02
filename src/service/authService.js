@@ -1,6 +1,4 @@
 export async function RegisterPost(email, username, password) {
-  const id = Math.random() * 100;
-
   const res = await fetch(
     "https://backend-dusky-eight-18.vercel.app/Register",
     {
