@@ -11,10 +11,9 @@ export async function RegisterPost(email, username, password) {
         "Access-Control-Allow-Origin": "*",
       },
       body: JSON.stringify({
-        id: id,
-        email: email,
-        username: username,
-        password: password,
+        email,
+        username,
+        password,
       }),
     }
   );
