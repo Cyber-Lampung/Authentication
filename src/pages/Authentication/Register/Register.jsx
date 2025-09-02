@@ -24,6 +24,7 @@ export default function Register() {
     r.preventDefault();
 
     if (!email || !username || !password) return alert("wajib di isi !");
+    console.log(email, username, password);
 
     const data = await RegisterPost(email, username, password);
     console.log(data);
