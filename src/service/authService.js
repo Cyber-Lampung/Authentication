@@ -5,7 +5,6 @@ export async function RegisterPost(email, username, password) {
       method: "POST",
       headers: {
         "Content-Type": "applicatio/json",
-        authorization: "dia",
         "Access-Control-Allow-Origin": "*",
       },
       body: JSON.stringify({
