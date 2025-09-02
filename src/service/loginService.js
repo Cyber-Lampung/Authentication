@@ -1,8 +1,12 @@
 export async function LoginAuth(email, password) {
-  const res = await fetch("/api/v1/login", {
+  const res = await fetch("https://backend-dusky-eight-18.vercel.app/Login", {
     method: "POST",
-    headers: { "Content-Type": "application/json" },
+    headers: {
+      "Content-Type": "application/json",
+      authorization: "dia",
+      "Access-Control-Allow-Origin": "*",
+    },
     body: JSON.stringify(email, password),
   });
-  return res.json();
+  console.log(res);
 }
