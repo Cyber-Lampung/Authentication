@@ -31,7 +31,7 @@ export default function Login() {
             <div className="mt-8 flex flex-col gap-5">
               <Input
                 type="email"
-                className="border-2 border-black p-2 rounded-lg w-[96%] outline-none text-sm font-semibold"
+                className="border-2 border-black p-2 rounded-lg w-[96%] outline-none text-xs font-semibold"
                 placeholder="Email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
@@ -39,7 +39,7 @@ export default function Login() {
 
               <Input
                 type="password"
-                className="border-2 border-black p-2 rounded-lg w-[85%] outline-none text-sm font-semibold"
+                className="border-2 border-black p-2 rounded-lg w-[85%] outline-none text-xs font-semibold"
                 placeholder="Password"
                 value={password}
                 onChange={(e) => setPass(e.target.value)}

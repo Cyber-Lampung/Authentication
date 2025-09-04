@@ -8,7 +8,7 @@ export default function LayananKami() {
   return (
     <>
       <article
-        className="h-150 mb-40 mt-30 w-[90%] m-auto  rounded-3xl"
+        className="h-150 mb-40 mt-30 w-[90%] m-auto rounded-3xl"
         style={{ background: "#040438ff" }}
       >
         <div className="relative top-30 z-0">
