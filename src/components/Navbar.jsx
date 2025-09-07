@@ -10,7 +10,7 @@ export default function NavBar() {
         </div>
 
         <ul className="flex gap-5 font-semibold text-sm">
-          <Link to={"/Home"}>Home</Link>
+          <Link to={"/"}>Home</Link>
           <Link to={"/TentangKami"}>Tentang Kami</Link>
           <Link to={"/Layanan"}>Layanan Kami</Link>
           <Link to={"/Testimony"}>Testimony Produk</Link>

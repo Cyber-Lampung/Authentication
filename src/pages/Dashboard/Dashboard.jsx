@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import NavbarDashboard from "../../components/NavbarDashboard";
-import AsideMainContent from "./ComponentDashboard/AsideMainDashboard";
-import AsideNabar from "./ComponentDashboard/AsideNavbar";
+import AsideMainContent from "./ComponentDashboardAdmin/AsideMainDashboard";
+import AsideNabar from "./ComponentDashboardAdmin/AsideNavbar";
 
 export default function Dashboard() {
   const [Render, SetRender] = useState(<AsideMainContent />);

@@ -1,0 +1,27 @@
+table,
+th,
+td {
+  border: solid 2px white;
+  padding: 10px;
+  color: white;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+td {
+  font-family: sans-serif;
+  font-size: 13px;
+}
+
+td {
+  font-size: 13px;
+}
+
+.Check {
+  background-color: white;
+  font-weight: normal;
+  padding: 5px;
+  border-radius: 10px;
+  font-size: 10px;
+  font-smooth: 15px;
+}
